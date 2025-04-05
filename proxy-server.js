@@ -8,7 +8,8 @@ const app = express();
 
 // Enable CORS for your frontend domain
 app.use(cors({
-    origin: 'https://downoad-free-insta-reels.vercel.app/' || '*'
+    origin: 'http://localhost:3000'
+    // origin: 'https://your-next-app.vercel.app'
 }));
 
 app.get('/proxy', async (req, res) => {
